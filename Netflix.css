@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: #fff;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+img{
+    max-width: 100%;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 26px 56px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+
+}
+header a.logo{
+    display: block;
+}
+header .logo svg{
+    fill:  #e50914;
+    height: 37px;
+
+}
+header div+div{
+    text-align: right;
+}
+
+header a.button{
+    display: inline-block;
+    background-color: #e50914;
+    color: white;
+    text-decoration: none;
+    padding: 7px 17px;
+    border-radius: 3px;
+}
+header select{
+    background: transparent;
+    color: white;
+    padding: 6px 0 6px 20px;
+    border-radius: 3px;
+}
+header div.select{
+    display: inline;
+    margin-right:10px;
+}
+header div.select svg{
+    height: 20px;
+    color: #fff;
+    position: absolute;
+    margin: 5px 4px;
+}
+div.splash{
+    position: relative;
+}
+div.splash div.gradient{
+   background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+   position: absolute;
+   inset: 0;
+   
+}
+
+div.splash div.background img{
+    
+    opacity: 0.6;
+    width: 100% ;
+    object-fit: cover;
+}
+div.splash div.content{
+    position: absolute;
+    inset: 0;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    max-width: 745px;
+    left: 50%;
+    margin-left: -372.5px;
+}
+div.splash h1,div.splash h2,div.splash h3{
+    font-weight: normal;
+}
+div.splash h1{
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+div.splash h2{
+    font-size: 1.625rem;
+    margin-top: 13px;
+    margin-bottom: 29px;
+}
+div.splash{
+    font-size: 1.2rem;
+}
+div.splash form{
+    position: relative;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr max-content;
+}
+div.splash input{
+    padding: 15px 10px;
+    width: 100%;
+    font-size: 1.2rem;
+    
+}
+div.splash input ~ span{
+    position: absolute;
+    left: 12px;
+    top: 19px;
+    z-index: 3;
+    color: #aaa;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+div.splash input:focus{
+    padding-top: 19px;
+    padding-left: 11px;
+}
+div.splash input:focus ~ span{
+    top: 4px;
+    font-size: 0.8rem;
+}
+div.splash button{
+    font-size: 1.875rem;
+    padding: 12px 26px;
+    background-color: #e50914;
+    color: #fff;
+    border: 0;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 46px;
+    padding: 70px 35px;
+    align-items: center;
+}
+section div.texts h1{
+    font-size: 3.125rem;
+    margin-bottom: 8px;
+}
+section div.texts p{
+    font-size:  1.625rem;
+}
+.media.s1 img{
+    width: 400px;
+}
+.media.s1 video{
+    width: 298px;
+    position: absolute;
+    top: 62px;
+    left: 52px;
+}
+.media{
+    position: relative;
+}
+section:nth-child(even) div.texts{
+    order: 2;
+}
+section div.download{
+    border: 2px solid #666;
+    border-radius: 15px;
+    padding: 10px;
+    height: 95px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 400px;
+    background-color: black;
+    left: 50%;
+    margin-left: -230px;
+    grid-template-columns: max-content 1fr max-content;
+}
+section div.download img{
+    height: 75px;
+    width: auto;
+
+}
+.line{
+    width: 100%;
+    height: 7px;
+    background-color: #333333;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 2;
+    height: 30px;
+    
+}
+.footer-container{
+    width: 100%;
+    height: 300px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.footer-container a{
+    text-decoration: none;
+    color: #737373;
+        
+}
+
+.footer-1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 8rem;
+    
+}
+.footer-2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 8rem;
+}
+.footer-3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 8rem;
+}
+.footer-4{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 8rem;
+}
+.question{
+    width: 100%;
+    padding-left: 240px;
+    padding-top: 60px;
+    display: block;
+    height: 67px;
+    color: #737373;
+}
